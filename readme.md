@@ -18,8 +18,7 @@ Xin chào, đây là web mình làm về Trường Mầm Non code bằng php thu
             - tk_admin: varchar(255)
             - mk_admin: varchar(255)
             - admin-status: int
-            Bảng này chỉnh mk_admin là MD5, sau đó nhập chay tài khoản admin nhé ( VD: tk_admin: admin, mk_admin: 123456789, admin_status: 1).
-            Sau khi cài xong sẽ dùng tài khoản admin này để đăng nhập vào trang quản lý.
+            
         + tbl_hs:
             - id_hs: int - pimary
             - name_hs: varchar(255)
@@ -50,10 +49,11 @@ Xin chào, đây là web mình làm về Trường Mầm Non code bằng php thu
             - noidung_lh: varchar(255)
     - B3: 
         + Vào browser truy cập trang web http://localhost:7882/preschool-web-php/ để sử dụng như user.
-        + Để vào trang admin truy cập http://localhost:7882/preschool-web-php/admin Sau đó nhập tài khoản, mật khẩu ở bước 2 vào là vào được trang quản lý.
+        + Để vào trang admin truy cập http://localhost:7882/preschool-web-php/admin Sau đó nhập tài khoản, mật khẩu ở tbl_admin là vào được trang quản lý.
 
 * Một vài lưu ý:
     - Mình không deploy nên các bạn có thể setup như các bước trên để chạy trên localhost.
+    - Bảng admin chỉnh mk_admin là MD5, sau đó nhập chay tài khoản admin nhé ( VD: tk_admin: admin, mk_admin: 123456789, admin_status: 1). Sau khi cài xong sẽ dùng tài khoản admin này để đăng nhập vào trang quản lý.
     - Nhập đúng các table và column chính xác như trên là OK
 
 ----------------------------------------------------------------------------------------------
